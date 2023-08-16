@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Questrial&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* * {border:0.5px solid red} */
+@font-face {
+  font-family: Rockness;
+  src: url(./assets/Rockness.otf) format('opentype');
+}
+
+#ways_cards .card button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1d1d1d;
+  background: linear-gradient(to left, #1d1d1d 50%, #b67d3b 50%) right;
+  cursor: pointer;
+  background-size: 200% 100%;
+  transition: 0.3s ease-out;
+  color: white;
+  border: none;
+  height: 41px;
+  width: 150px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 0.85rem;
+  z-index: 1;
+  position: absolute;
+  bottom: -6%;
+  box-shadow: 7.39535px 8.01163px 2.46512px rgba(0, 0, 0, 0.25);
+}
+
+#ways_cards .card button:hover {
+  background-position: left;
+}
+
+#ways_cards .card button img {
+  height: 25px;
+  width: auto;
+  position: relative;
+  left: 10px;
+  filter: brightness(2.5);
+}
+
+.intro-btn {
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  background: linear-gradient(
+    86.58deg,
+    #b67d3b 0.53%,
+    #dba159 28.13%,
+    #b67d3b 65.88%
+  );
+  box-shadow: 1.58194px 1.05462px 1.5814px rgba(0, 0, 0, 0.25);
+}
+
+.btn-shadow {
+  box-shadow: 9.90698px 10.7326px 3.30233px rgba(0, 0, 0, 0.25);
+}
+
+.btn2 span:first-child {
+  transform: translateX(-101%);
+  transition: transform 0.3s ease-in;
+}
+
+.btn2:hover span {
+  transform: translateX(0);
+}
+
+.btn3 span:first-child {
+  transform: translateX(-101%);
+  transition: transform 0.3s ease-in;
+}
+
+.btn3:hover span {
+  transform: translateX(0);
+}
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: relative;
+  width: 30px;
+  height: 24px;
+  /* background-color: #000; */
+  /* right: 36px; */
+  /* top: 36px; */
+}
+
+@media (min-width: 768px) {
+  .bm-burger-button {
+    display: none;
+  }
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: #373a47;
+  height: 1.67px !important;
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #a90000;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 12px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #000;
+}
+
+/*
+  Sidebar wrapper styles
+  Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+  */
+.bm-menu-wrap {
+  top: 0;
+  position: relative;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  display: flex;
+  background: url(./assets/texture-2.webp), #fff;
+  /* padding: 2.5em 1.5em 0; */
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* height: 10%; */
+  width: 100%;
+  align-items: center;
+  color: #000;
+  /* padding: 0.8em; */
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  margin-bottom: 55px;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+  .custom-scroll::-webkit-scrollbar {
+    width: 3px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-scroll::-webkit-scrollbar {
+    width: 2px;
+  }
+}
+
+.form-btn {
+  box-shadow: 4.38003px 4.74503px 1.46001px rgba(0, 0, 0, 0.25);
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: #c1c1c1;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: #b67d3b;
+}
+
+.btn-card {
+  box-shadow: 4.50672px 4.88228px 1.50224px rgba(0, 0, 0, 0.25);
+}
+
+.ways-card-shadow {
+  box-shadow: 3.80173px 4.43535px 2.53449px rgba(0, 0, 0, 0.25);
+}
+.testimonial-shadow {
+  box-shadow: 4.25px 5.3px 3.4px rgba(0, 0, 0, 0.25);
+}
+/* 
+.slick-slide {
+    margin: 0 10px;
+}
+
+.slick-parent {
+    margin-left:-20px;
+} */
